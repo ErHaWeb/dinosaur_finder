@@ -1,0 +1,66 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true" lang="en">
+<div class="filters">
+    <f:render section="PropertyFilter" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:'diet',valueType:'localized'}"/>
+    <f:render section="PropertyFilter" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:'size', valueType:'float'}"/>
+    <f:render section="PropertyFilter" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:'weight', valueType:'float'}"/>
+    <f:render section="PropertyFilter" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:'era',valueType:'localized'}"/>
+    <f:render section="PropertyFilter" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:'region',valueType:'localized'}"/>
+    <f:render section="PropertyFilter" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:'discovery_year',valueType:'integer'}"/>
+    <f:render section="PropertyFilter" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:'discoverer'}"/>
+    <button class="reset">Reset</button>
+</div>
+<f:section name="PropertyFilter">
+    <f:if condition="{properties.{property} -> f:count()} > 0">
+        <div>
+            <f:if condition="{valueType} == 'float' || {valueType} == integer">
+                <f:then>
+                    <f:for each="{0: 'min', 1: 'max'}" as="modifier">
+                        <label for="filter-{property}_{modifier}">
+                            <f:translate key="LLL:EXT:dinosaur_finder/Resources/Private/Language/locallang_db.xlf:tx_dinosaurfinder_dinosaur.{property}_{modifier}" languageKey="{languageKey}"/>
+                        </label>
+                        <select id="filter-{property}_{modifier}" class="filter" data-filter-name="{property}_{modifier}"{f:if(condition:'{properties.{property} -> f:count()} == 1',then:' disabled="disabled"')}>
+                            <f:render section="Options" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:property,valueType:valueType,localized:localized,modifier:modifier}"/>
+                        </select>
+                    </f:for>
+                </f:then>
+                <f:else>
+                    <label for="filter-{property}">
+                        <f:translate key="LLL:EXT:dinosaur_finder/Resources/Private/Language/locallang_db.xlf:tx_dinosaurfinder_dinosaur.{property}" languageKey="{languageKey}"/>
+                    </label>
+                    <select id="filter-{property}" class="filter" data-filter-name="{property}"{f:if(condition:'{properties.{property} -> f:count()} == 1',then:' disabled="disabled"')}>
+                        <f:render section="Options" arguments="{properties:properties,languageKey:languageKey,constraints:constraints,property:property,valueType:valueType,localized:localized}"/>
+                    </select>
+                </f:else>
+            </f:if>
+        </div>
+    </f:if>
+</f:section>
+<f:section name="Options">
+    <option value="">-</option>
+    <f:for each="{properties.{property}}" as="value">
+        <f:if condition="{constraints.{property}} == {value} || {properties.{property} -> f:count()} == 1">
+            <f:then>
+                <option value="{value}" selected>
+                    <f:render section="OptionValue" arguments="{languageKey:languageKey,property:property,valueType:valueType,localized:localized,value:value}"/>
+                </option>
+            </f:then>
+            <f:else>
+                <option value="{value}">
+                    <f:render section="OptionValue" arguments="{languageKey:languageKey,property:property,valueType:valueType,localized:localized,value:value}"/>
+                </option>
+            </f:else>
+        </f:if>
+    </f:for>
+</f:section>
+<f:section name="OptionValue">
+    <f:switch expression="{valueType}">
+        <f:case value="localized">
+            <f:translate key="LLL:EXT:dinosaur_finder/Resources/Private/Language/locallang_db.xlf:tx_dinosaurfinder_dinosaur.{property}.I.{value}" languageKey="{languageKey}"/>
+        </f:case>
+        <f:case value="float">
+            <f:format.number decimals="2" thousandsSeparator="." decimalSeparator=",">{value}</f:format.number>
+        </f:case>
+        <f:defaultCase>{value}</f:defaultCase>
+    </f:switch>
+</f:section>
+</html>

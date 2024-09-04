@@ -1,0 +1,49 @@
+{
+	"name": "erhaweb/dinosaur-finder",
+	"type": "typo3-cms-extension",
+	"description": "Ajax based dinosaur finder",
+	"license": "GPL-2.0-or-later",
+	"version": "1.0.0",
+	"require": {
+		"typo3/cms-core": "^12.4 || ^13.0",
+		"php": "^8.1 || ^8.2 || ^8.3"
+	},
+	"authors": [
+		{
+			"name": "Eric Harrer",
+			"role": "Developer",
+			"email": "info@eric-harrer.de",
+			"homepage": "https://www.eric-harrer.de"
+		}
+	],
+	"keywords": [
+		"TYPO3 CMS",
+		"Dinosaur",
+		"Finder"
+	],
+	"support": {
+		"issues": "https://github.com/ErHaWeb/dinosaur_finder/issues"
+	},
+	"funding": [
+		{
+			"type": "other",
+			"url:": "https://github.com/sponsors/ErHaWeb"
+		}
+	],
+	"homepage": "https://typo3.org",
+	"require-dev": {
+		"roave/security-advisories": "dev-latest"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "dinosaur_finder"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"ErHaWeb\\DinosaurFinder\\": "Classes"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

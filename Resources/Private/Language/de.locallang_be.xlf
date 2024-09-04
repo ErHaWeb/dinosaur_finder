@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" original="" datatype="plaintext" date="2024-06-19T14:20:16+02:00">
+		<body>
+			<trans-unit id="pi1_title" resname="pi1_title">
+				<source>Dinosaur Finder</source>
+				<target>Dinosaurier-Finder</target>
+			</trans-unit>
+			<trans-unit id="pi1_plus_wiz_description" resname="pi1_plus_wiz_description">
+				<source>Ajax based dinosaur finder</source>
+				<target>Ajax-basierter Dinosaurier-Finder</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,9 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true" lang="en">
+<f:if condition="{dinosaurs -> f:count()} > 0">
+    <f:asset.css identifier="dinosaurs" href="EXT:dinosaur_finder/Resources/Public/Css/styles.min.css"/>
+    <f:asset.script identifier="dinosaurs" src="EXT:dinosaur_finder/Resources/Public/JavaScript/script.js"/>
+    <div id="tx_dinosaurfinder-{uid}" class="tx_dinosaurfinder" data-language-key="{languageKey}" data-id="{id}" data-hash="{hash}">
+        <f:render section="Content"/>
+    </div>
+</f:if>
+</html>

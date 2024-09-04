@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" target-language="de" original="" datatype="plaintext" date="2024-06-22T22:14:03+02:00">
+		<body>
+			<trans-unit id="tx_dinosaurfinder_dinosaur" resname="tx_dinosaurfinder_dinosaur">
+				<source>Dinosaur</source>
+				<target>Dinosaurier</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.name" resname="tx_dinosaurfinder_dinosaur.name">
+				<source>Name</source>
+				<target>Name</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.diet" resname="tx_dinosaurfinder_dinosaur.diet">
+				<source>Diet</source>
+				<target>Ernährung</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.diet.I.carnivore" resname="tx_dinosaurfinder_dinosaur.diet.I.carnivore">
+				<source>Carnivore</source>
+				<target>Fleischfresser</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.diet.I.herbivore" resname="tx_dinosaurfinder_dinosaur.diet.I.herbivore">
+				<source>Herbivore</source>
+				<target>Pflanzenfresser</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.diet.I.insectivore" resname="tx_dinosaurfinder_dinosaur.diet.I.insectivore">
+				<source>Insectivore</source>
+				<target>Insektenfresser</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.diet.I.omnivore" resname="tx_dinosaurfinder_dinosaur.diet.I.omnivore">
+				<source>Omnivore</source>
+				<target>Allesfresser</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.size" resname="tx_dinosaurfinder_dinosaur.size">
+				<source>Size (m)</source>
+				<target>Größe (m)</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.size_min" resname="tx_dinosaurfinder_dinosaur.size_min">
+				<source>Min. Size (m)</source>
+				<target>Min. Größe (m)</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.size_max" resname="tx_dinosaurfinder_dinosaur.size_max">
+				<source>Max. Size (m)</source>
+				<target>Max. Größe (m)</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.weight" resname="tx_dinosaurfinder_dinosaur.weight">
+				<source>Weight (kg)</source>
+				<target>Gewicht (kg)</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.weight_min" resname="tx_dinosaurfinder_dinosaur.weight_min">
+				<source>Min. Weight (kg)</source>
+				<target>Min. Gewicht (kg)</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.weight_max" resname="tx_dinosaurfinder_dinosaur.weight_max">
+				<source>Max. Weight (kg)</source>
+				<target>Max. Gewicht (kg)</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.era" resname="tx_dinosaurfinder_dinosaur.era">
+				<source>Era</source>
+				<target>Epoche</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.era.I.cretaceous" resname="tx_dinosaurfinder_dinosaur.era.I.cretaceous">
+				<source>Cretaceous</source>
+				<target>Kreide</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.era.I.jurassic" resname="tx_dinosaurfinder_dinosaur.era.I.jurassic">
+				<source>Jurassic</source>
+				<target>Jura</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.era.I.permian" resname="tx_dinosaurfinder_dinosaur.era.I.permian">
+				<source>Permian</source>
+				<target>Perm</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.era.I.triassic" resname="tx_dinosaurfinder_dinosaur.era.I.triassic">
+				<source>Triassic</source>
+				<target>Trias</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.region" resname="tx_dinosaurfinder_dinosaur.region">
+				<source>Region</source>
+				<target>Region</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.region.I.africa" resname="tx_dinosaurfinder_dinosaur.region.I.africa">
+				<source>Africa</source>
+				<target>Afrika</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.region.I.antarctica" resname="tx_dinosaurfinder_dinosaur.region.I.antarctica">
+				<source>Antarctica</source>
+				<target>Antarktis</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.region.I.asia" resname="tx_dinosaurfinder_dinosaur.region.I.asia">
+				<source>Asia</source>
+				<target>Asien</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.region.I.australia" resname="tx_dinosaurfinder_dinosaur.region.I.australia">
+				<source>Australia</source>
+				<target>Australien</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.region.I.europe" resname="tx_dinosaurfinder_dinosaur.region.I.europe">
+				<source>Europe</source>
+				<target>Europa</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.region.I.north-america" resname="tx_dinosaurfinder_dinosaur.region.I.north-america">
+				<source>North America</source>
+				<target>Nordamerika</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.region.I.south-america" resname="tx_dinosaurfinder_dinosaur.region.I.south-america">
+				<source>South America</source>
+				<target>Südamerika</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.discovery_year" resname="tx_dinosaurfinder_dinosaur.discovery_year">
+				<source>Year of discovery</source>
+				<target>Jahr der Entdeckung</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.discovery_year_min" resname="tx_dinosaurfinder_dinosaur.discovery_year_min">
+				<source>Min. Year of discovery</source>
+				<target>Min. Jahr der Entdeckung</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.discovery_year_max" resname="tx_dinosaurfinder_dinosaur.discovery_year_max">
+				<source>Max. Year of discovery</source>
+				<target>Max. Jahr der Entdeckung</target>
+			</trans-unit>
+			<trans-unit id="tx_dinosaurfinder_dinosaur.discoverer" resname="tx_dinosaurfinder_dinosaur.discoverer">
+				<source>Discoverer</source>
+				<target>Entdecker</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
