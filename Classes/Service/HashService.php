@@ -2,8 +2,10 @@
 
 namespace ErHaWeb\DinosaurFinder\Service;
 
+use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Crypto\HashService as CoreHashService;
+use TYPO3\CMS\Extbase\Security\Cryptography\HashService as ExtbaseHashService;
 
 class HashService
 {
@@ -11,8 +13,14 @@ class HashService
 
     public static function getHash(int $id): string
     {
-        if ($coreHashService = GeneralUtility::makeInstance(CoreHashService::class)) {
-            return $coreHashService->hmac($id, self::getSecret());
+        if ((new Typo3Version())->getMajorVersion() >= 13) {
+            if ($coreHashService = GeneralUtility::makeInstance(CoreHashService::class)) {
+                return $coreHashService->hmac($id, self::getSecret());
+            }
+        } else {
+            if ($extbaseHashService = GeneralUtility::makeInstance(ExtbaseHashService::class)) {
+                return $extbaseHashService->generateHmac($id);
+            }
         }
         return '';
     }

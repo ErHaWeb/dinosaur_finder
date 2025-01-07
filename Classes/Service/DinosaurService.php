@@ -134,10 +134,8 @@ readonly class DinosaurService
             $queryBuilder->orderBy(self::NAME_FIELD);
         }
 
-        $queryBuilder->executeQuery();
-
         try {
-            return $queryBuilder->fetchAllAssociative();
+            return $queryBuilder->executeQuery()->fetchAllAssociative();
         } catch (Exception) {
             return [];
         }
